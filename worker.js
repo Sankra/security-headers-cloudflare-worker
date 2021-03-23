@@ -1,10 +1,11 @@
 const securityHeaders = {
         "Content-Security-Policy": "upgrade-insecure-requests",
-        "Strict-Transport-Security": "max-age=1000",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
         "X-Xss-Protection": "1; mode=block",
         "X-Frame-Options": "DENY",
         "X-Content-Type-Options": "nosniff",
-        "Referrer-Policy": "strict-origin-when-cross-origin"
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=()"
     },
     sanitiseHeaders = {
         Server: ""
