@@ -5,7 +5,7 @@ const securityHeaders = {
         "X-Frame-Options": "DENY",
         "X-Content-Type-Options": "nosniff",
         "Referrer-Policy": "strict-origin-when-cross-origin",
-        "Permissions-Policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=()"
+        "Permissions-Policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), interest-cohort=()"
     },
     sanitiseHeaders = {
         Server: ""
